@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/style.css" rel="stylesheet">
+  <title>Componetentes Tailwind Css</title>
+</head>
+<body class="font-inter bg-white text-slate-900">
+
+  <header>
+    <!-- Desktop -->
+    <nav class="flex flex-row justify-center p-7 font-semibold gap-x-10 text-slate-500">
+      <a href="/" class="hover:text-sky-500">Inicio</a>
+      <a href="" class="hover:text-sky-500">Github</a>
+      <a href="" class="hover:text-sky-500">Portifolio</a>
+    </nav>
+
+    <!-- Mobile -->
+    <nav>
+
+    </nav>
+  </header>
+
+
+  <!-- Hero -->
+  <section class="flex flex-col mt-5 w-screen lg:w-9/12 mx-auto px-10 text-center">
+    <h1 class="font-extrabold text-5xl lg:text-6xl mb-3">Componentes TailwindCss</h1>
+    <p class="text-md lg:text-xl">Criados com muito cuidado e carinho, pra você usar no seu projeto, <span class="text-sky-500">de graça!</span></p>
+  </section>
+
+
+  <!-- Info -->
+  <section class="my-16 px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-screen lg:w-11/12 mx-auto">
+    <div class="flex flex-row">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-10 h-10 text-sky-500 drop-shadow-md" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+          <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+          <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+        </svg>
+      </div>
+      <div class="ml-6">
+        <h2 class="font-bold mb-2">Pronto pra usar</h2>
+        <p class="font-light">Clique nos componentes, interaja com todos eles, copie e use. Simples assim.</p>
+      </div>
+    </div>
+
+    <div class="flex flex-row">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-10 h-10 text-sky-500 drop-shadow-md" viewBox="0 0 16 16">
+            <path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"/>
+          </svg>
+      </div>
+      <div class="ml-6">
+        <h2 class="font-bold mb-2">Totalmente Responsivo</h2>
+        <p class="font-light">Todos os componentes pensados e criados para ter uma ótima aparência em qualquer tamanho de tela.</p>
+      </div>
+    </div>
+
+    <div class="flex flex-row">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-10 h-10 text-sky-500 drop-shadow-md" viewBox="0 0 16 16">
+          <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/>
+        </svg>
+      </div>
+      <div class="ml-6">
+        <h2 class="font-bold mb-2">Novos componentes</h2>
+        <p class="font-light">Sempre aumentando o tamanho da coleção com novos componentes e a mesma qualidade.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <main class="w-screen lg:w-9/12 mx-auto px-10 my-10">
+
+    
+    
+    <!-- Botões -->
+    <h2 class="font-bold mb-1 text-sky-500">Botões</h2>
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 lg:grid-cols-3">
+      
+      
+      <a href="." class="no-sel">
+        <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
+          <span class="bg-sky-500 absolute left-5 top-5 uppercase pt-[1px] rounded-full text-white pr-1 pl-[0.35rem] text-xs font-bold">Novo</span>
+          <div class="sub-item">
+            <img class="bg-zinc-200/70 w-full h-auto aspect-video rounded-xl pointer-events-none" src="Botões.png" alt="Botões">
+          </div>
+          <p class="sub-text">Botões</p>
+          <p class="text-xs font-semibold opacity-60">10 Componentes</p>
+        </div>
+      </a>
+
+
+      <a href="." class="no-sel">
+        <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
+          <span class="bg-sky-500 absolute left-5 top-5 uppercase pt-[1px] rounded-full text-white pr-1 pl-[0.35rem] text-xs font-bold">Novo</span>
+          <div class="sub-item">
+            <img class="bg-zinc-200/70 w-full h-auto aspect-video rounded-xl pointer-events-none" src="Botões.png" alt="Botões">
+          </div>
+          <p class="sub-text">Botões</p>
+          <p class="text-xs font-semibold opacity-60">10 Componentes</p>
+        </div>
+      </a>
+
+
+      <a href="." class="no-sel">
+        <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
+          <span class="bg-sky-500 absolute left-5 top-5 uppercase pt-[1px] rounded-full text-white pr-1 pl-[0.35rem] text-xs font-bold">Novo</span>
+          <div class="sub-item">
+            <img class="bg-zinc-200/70 w-full h-auto aspect-video rounded-xl pointer-events-none" src="Botões.png" alt="Botões">
+          </div>
+          <p class="sub-text">Botões</p>
+          <p class="text-xs font-semibold opacity-60">10 Componentes</p>
+        </div>
+      </a>
+
+      <a href="." class="no-sel">
+        <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
+          <span class="bg-sky-500 absolute left-5 top-5 uppercase pt-[1px] rounded-full text-white pr-1 pl-[0.35rem] text-xs font-bold">Novo</span>
+          <div class="sub-item">
+            <img class="bg-zinc-200/70 w-full h-auto aspect-video rounded-xl pointer-events-none" src="Botões.png" alt="Botões">
+          </div>
+          <p class="sub-text">Botões</p>
+          <p class="text-xs font-semibold opacity-60">10 Componentes</p>
+        </div>
+      </a>
+      
+    </section>
+
+  </main>
+
+</body>
+</html>
