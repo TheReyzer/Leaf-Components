@@ -662,11 +662,6 @@ pre::-webkit-scrollbar-thumb{
   margin-bottom: 1.75rem;
 }
 
-.mx-0{
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .mt-7{
   margin-top: 1.75rem;
 }
@@ -759,16 +754,8 @@ pre::-webkit-scrollbar-thumb{
   height: 1.25rem;
 }
 
-.h-14{
-  height: 3.5rem;
-}
-
 .h-6{
   height: 1.5rem;
-}
-
-.h-1{
-  height: 0.25rem;
 }
 
 .w-screen{
@@ -781,10 +768,6 @@ pre::-webkit-scrollbar-thumb{
 
 .w-5{
   width: 1.25rem;
-}
-
-.w-14{
-  width: 3.5rem;
 }
 
 .w-fit{
@@ -860,40 +843,16 @@ pre::-webkit-scrollbar-thumb{
        column-gap: 1.25rem;
 }
 
-.-space-x-1 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(-0.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(-0.25rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-1 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-2 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-3 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-4 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-5 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1.25rem * var(--tw-space-x-reverse));
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.-space-x-1 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(-0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(-0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-y-hidden{
@@ -914,14 +873,6 @@ pre::-webkit-scrollbar-thumb{
 
 .rounded-full{
   border-radius: 9999px;
-}
-
-.rounded-lg{
-  border-radius: 0.5rem;
-}
-
-.rounded{
-  border-radius: 0.25rem;
 }
 
 .rounded-md{
@@ -972,16 +923,6 @@ pre::-webkit-scrollbar-thumb{
   background-color: rgb(241 245 249 / 0.5);
 }
 
-.bg-red-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
-.bg-blue-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1012,11 +953,6 @@ pre::-webkit-scrollbar-thumb{
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-0{
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 .pt-2{
@@ -1139,9 +1075,9 @@ pre::-webkit-scrollbar-thumb{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-rose-400{
+.text-sky-400{
   --tw-text-opacity: 1;
-  color: rgb(251 113 133 / var(--tw-text-opacity));
+  color: rgb(56 189 248 / var(--tw-text-opacity));
 }
 
 .text-slate-600{
@@ -1149,23 +1085,13 @@ pre::-webkit-scrollbar-thumb{
   color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
-.text-sky-400{
+.text-rose-400{
   --tw-text-opacity: 1;
-  color: rgb(56 189 248 / var(--tw-text-opacity));
+  color: rgb(251 113 133 / var(--tw-text-opacity));
 }
 
 .text-slate-900\/60{
   color: rgb(15 23 42 / 0.6);
-}
-
-.text-blue-400{
-  --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity));
-}
-
-.text-yellow-400{
-  --tw-text-opacity: 1;
-  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 .opacity-0{
@@ -1189,16 +1115,6 @@ pre::-webkit-scrollbar-thumb{
 .ring-white{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
-}
-
-.ring-red-500{
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(239 68 68 / var(--tw-ring-opacity));
-}
-
-.ring-slate-900{
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(15 23 42 / var(--tw-ring-opacity));
 }
 
 .drop-shadow-md{
@@ -1353,24 +1269,8 @@ pre::-webkit-scrollbar-thumb{
 }
 
 @media (min-width: 768px){
-  .md\:w-screen{
-    width: 100vw;
-  }
-
-  .md\:w-9\/12{
-    width: 75%;
-  }
-
-  .md\:w-1\/12{
-    width: 8.333333%;
-  }
-
   .md\:w-11\/12{
     width: 91.666667%;
-  }
-
-  .md\:w-2\/12{
-    width: 16.666667%;
   }
 
   .md\:grid-cols-2{
@@ -1380,11 +1280,6 @@ pre::-webkit-scrollbar-thumb{
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .md\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
   }
 }
 
@@ -1416,11 +1311,6 @@ pre::-webkit-scrollbar-thumb{
   .lg\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-
-  .lg\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .lg\:text-6xl{
