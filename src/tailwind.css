@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    .no-sel {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        text-decoration: none;
+        user-select: none;
+    }
+
+    .hide-scroll::-webkit-scrollbar {
+        @apply w-1.5 h-1.5;
+    }
+    
+    .hide-scroll::-webkit-scrollbar-track {
+        @apply rounded-full;
+    }
+    
+    .hide-scroll::-webkit-scrollbar-thumb {
+        @apply bg-transparent rounded-full;
+    }
+
+    pre::-webkit-scrollbar {
+        @apply w-1.5 h-2.5;
+    }
+    
+    pre::-webkit-scrollbar-track {
+        @apply rounded-full;
+    }
+    
+    pre::-webkit-scrollbar-thumb {
+        @apply bg-slate-700 rounded-full;
+    }
+
+    .sub-item {
+        @apply rounded-xl border-2 border-zinc-200/70 px-3 py-2 flex justify-center items-center align-middle text-center transition-colors;
+    }
+
+    .item-sky {
+        @apply group-hover:border-sky-500;
+    }
+    .item-rose {
+        @apply group-hover:border-rose-500;
+    }
+    .item-yellow {
+        @apply group-hover:border-yellow-500;
+    }
+    .item-emerald {
+        @apply group-hover:border-emerald-500;
+    }
+    .item-purple {
+        @apply group-hover:border-purple-500;
+    }
+
+    .preview-code pre {
+        @apply bg-slate-900 rounded-xl text-slate-50/90 p-4 overflow-x-scroll;
+    }
+}
