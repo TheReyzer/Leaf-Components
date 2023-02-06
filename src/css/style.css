@@ -659,6 +659,22 @@ pre::-webkit-scrollbar-thumb{
   bottom: 0px;
 }
 
+.-bottom-0\.5{
+  bottom: -0.125rem;
+}
+
+.-left-0\.5{
+  left: -0.125rem;
+}
+
+.-bottom-0{
+  bottom: -0px;
+}
+
+.-left-0{
+  left: -0px;
+}
+
 .z-20{
   z-index: 20;
 }
