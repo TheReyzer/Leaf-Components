@@ -87,7 +87,7 @@ btnCopy.forEach((el, i) => {
 // Highlight Code
 function hightlight(i, state) {
     if (state == 0) {
-        const html = ['div', 'img', 'section'];
+        const html = ['div', 'img', 'section','span'];
         const code = document.querySelectorAll('pre');
 
         // change html classes
@@ -96,21 +96,20 @@ function hightlight(i, state) {
             return;
         }
         htmlClasses.forEach(word => {
-            const modifiedString = replaceBetweenQuotes(code[i].innerHTML, word.slice(7, -1), `<span class="x text-sky-400">${
-                word.slice(7, -1)
-            }</span>`);
+            const modifiedString = replaceBetweenQuotes(code[i].innerHTML, word.slice(7, -1), `<code class="text-sky-400">${word.slice(7, -1)}</code>`);
             code[i].innerHTML = modifiedString;
         });
 
         // Change some HTML strings
-        code[i].innerHTML = replaceWords(code[i].innerHTML, "/&gt;", `<span class="x text-slate-600">/&gt;</span>`);
-        code[i].innerHTML = replaceWords(code[i].innerHTML, "&gt;", `<span class="x text-slate-600">&gt;</span>`);
-        code[i].innerHTML = replaceWords(code[i].innerHTML, "&lt;/", `<span class="x text-slate-600">&lt;\/</span>`);
-        code[i].innerHTML = replaceWords(code[i].innerHTML, "&lt;", `<span class="x text-slate-600">&lt;</span>`);
+        code[i].innerHTML = replaceWords(code[i].innerHTML, "/&gt;", `<code class="text-slate-600">/&gt;</code>`);
+        code[i].innerHTML = replaceWords(code[i].innerHTML, "&gt;", `<code class="text-slate-600">&gt;</code>`);
+        code[i].innerHTML = replaceWords(code[i].innerHTML, "&lt;/", `<code class="text-slate-600">&lt;\/</code>`);
+        code[i].innerHTML = replaceWords(code[i].innerHTML, "&lt;", `<code class="text-slate-600">&lt;</code>`);
 
         // Change html tags
         html.forEach(word => {
-            const modifiedString = replaceWords(code[i].innerHTML, word, `<span class="x text-rose-400">${word}</span>`);
+            const regex = /<.*?(?= |>|\/>|<\/.*?>)/g;
+            const modifiedString = replaceWords(code[i].innerHTML, word, `<code class="text-rose-400">${word}</code>`);
             code[i].innerHTML = modifiedString;
         });
     }
