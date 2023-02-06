@@ -1390,6 +1390,11 @@ pre::-webkit-scrollbar-thumb{
 }
 
 
+.dark .dark\:bg-slate-800\/20{
+  background-color: rgb(30 41 59 / 0.2);
+}
+
+
 .dark .dark\:fill-slate-500{
   fill: #64748b;
 }
