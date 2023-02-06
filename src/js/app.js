@@ -173,20 +173,20 @@ function hightlight(i, state) {
             return;
         }
         htmlClasses.forEach(word => {
-            const modifiedString = replaceBetweenQuotes(code[i].innerHTML, word.slice(7, -1), `<code class="text-sky-400">${word.slice(7, -1)}</code>`);
+            const modifiedString = replaceBetweenQuotes(code[i].innerHTML, word.slice(7, -1), `<code class="text-sky-500 dark:text-sky-400">${word.slice(7, -1)}</code>`);
             code[i].innerHTML = modifiedString;
         });
 
         // Change some HTML strings
-        code[i].innerHTML = replaceWords(code[i].innerHTML, "/&gt;", `<code class="text-slate-600">/&gt;</code>`);
-        code[i].innerHTML = replaceWords(code[i].innerHTML, "&gt;", `<code class="text-slate-600">&gt;</code>`);
-        code[i].innerHTML = replaceWords(code[i].innerHTML, "&lt;/", `<code class="text-slate-600">&lt;\/</code>`);
-        code[i].innerHTML = replaceWords(code[i].innerHTML, "&lt;", `<code class="text-slate-600">&lt;</code>`);
+        code[i].innerHTML = replaceWords(code[i].innerHTML, "/&gt;", `<code class="text-slate-500 dark:text-slate-600">/&gt;</code>`);
+        code[i].innerHTML = replaceWords(code[i].innerHTML, "&gt;", `<code class="text-slate-500 dark:">&gt;</code>`);
+        code[i].innerHTML = replaceWords(code[i].innerHTML, "&lt;/", `<code class="text-slate-500 dark:">&lt;\/</code>`);
+        code[i].innerHTML = replaceWords(code[i].innerHTML, "&lt;", `<code class="text-slate-500 dark:">&lt;</code>`);
 
         // Change html tags
         html.forEach(word => {
             const regex = /<.*?(?= |>|\/>|<\/.*?>)/g;
-            const modifiedString = replaceWords(code[i].innerHTML, word, `<code class="text-rose-400">${word}</code>`);
+            const modifiedString = replaceWords(code[i].innerHTML, word, `<code class="text-rose-500 dark:text-rose-400">${word}</code>`);
             code[i].innerHTML = modifiedString;
         });
     }
