@@ -3,27 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./css/output.css" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet">
         <title>Componetentes Tailwind Css</title>
-    
+
         <script>
             // It's best to inline this in `head` to avoid FOUC (flash of unstyled content) when changing pages or themes
-            if (
-                localStorage.getItem('color-theme') === 'dark' ||
-                (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-            ) {
-                document
-                    .documentElement
-                    .classList
-                    .add('dark');
+            if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
             } else {
-                document
-                    .documentElement
-                    .classList
-                    .remove('dark');
+                document.documentElement.classList.remove('dark');
             }
         </script>
-        
+
     </head>
     <body class="font-inter bg-white text-slate-900 dark:bg-slate-900 dark:text-slate-100">
 
@@ -32,33 +23,34 @@
                 <a href="/" class="hover:text-sky-500">Home</a>
                 <a href="https://github.com/TheReyzer" target="_blank" class="hover:text-sky-500">Github</a>
                 <a href="https://rodrigocjesus.netlify.app" target="_blank" class="hover:text-sky-500">Portifolio</a>
-            
-                <div class="group border-l border-slate-300 pl-7 relative">
-                  <button class="btn-theme p-2 focus:outline-none">
+
+                <div class="border-l group border-slate-300 dark:border-slate-700 pl-7 relative">
+                    <button class="btn-theme p-2 focus:outline-none">
                         <svg viewbox="0 0 24 24" fill="none" class="w-6 h-6 m-auto">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z" class="fill-transparent"></path>
-                            <path d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z" class="fill-zinc-400"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z" class="fill-zinc-400"></path>
+                            <path d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z" class="fill-slate-400"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z" class="fill-slate-400"></path>
                         </svg>
-                  </button>
-                  
-                  <div class="group-hover:opacity-100 group-hover:pointer-events-auto hover:opacity-100 hover-pointer-events-none opacity-0 pointer-events-none absolute top-11 right-1 flex flex-col space-y-3 bg-white shadow-lg border border-slate-300 rounded-xl py-4 px-3">
-                      <button class="btn-light p-2 flex flex-row items-center focus:outline-none">
-                          <svg viewbox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-2">
-                              <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="stroke-zinc-400"></path>
-                              <path d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836" class="stroke-zinc-400"></path>
-                          </svg> <span class="ml-1">Light</span>
-                      </button>
-                      
-                      <button class="btn-dark p-2 flex flex-row items-center focus:outline-none">
-                          <svg viewbox="0 0 24 24" fill="none" class="w-6 h-6 mr-2">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z" class="fill-transparent"></path>
-                              <path d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z" class="fill-zinc-400"></path>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z" class="fill-zinc-400"></path>
-                          </svg> <span class="ml-1">Dark</span>
-                      </button>
-                  </div>
-                  
+                    </button>
+
+                    <div class="group-hover:opacity-100 group-hover:pointer-events-auto hover:opacity-100 hover-pointer-events-none opacity-0 pointer-events-none absolute top-11 right-1 lg:top-10 lg:-right-20 flex flex-col space-y-3 bg-white shadow-lg border border-slate-300 dark:bg-slate-900 dark:border-slate-700 rounded-xl py-4 px-3">
+                        <button class="btn-light group/theme hover:text-sky-500 p-2 flex flex-row items-center focus:outline-none">
+                            <svg viewbox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-2">
+                                <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="stroke-slate-400 group-hover/theme:stroke-sky-500"></path>
+                                <path d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836" class="stroke-slate-400 group-hover/theme:stroke-sky-500"></path>
+                            </svg>
+                            <span class="ml-1 ">Light</span>
+                        </button>
+
+                        <button class="btn-dark group/theme hover:text-sky-500 p-2 flex flex-row items-center focus:outline-none">
+                            <svg viewbox="0 0 24 24" fill="none" class="w-6 h-6 mr-2">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z" class="fill-transparent"></path>
+                                <path d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z" class="fill-slate-400 group-hover/theme:fill-sky-500"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z" class="fill-slate-400 group-hover/theme:fill-sky-500"></path>
+                            </svg>
+                            <span class="ml-1">Dark</span>
+                        </button>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -116,89 +108,90 @@
 
 
         <nav class="sticky top-0 backdrop-opacity-60 backdrop-blur-lg bg-white/90 dark:bg-slate-900/90 z-20 px-8 pt-2 pb-1 no-sel mb-12 lg:justify-center flex flex-row gap-x-10 hide-scroll border-b border-gray-200 dark:border-gray-800 overflow-x-scroll overflow-y-hidden">
-            <a href="#elements" class="font-medium text-slate-500 dark:text-slate-100 hover:text-sky-500 relative">Elements</a>
-            
-            <a href="#forms" class="font-medium text-slate-500 dark:text-slate-100 hover:text-rose-500 relative">Forms</a>
-            
-            <a href="#modals" class="font-medium text-slate-500 dark:text-slate-100 hover:text-yellow-500 relative">Modals</a>
-            
-            <a href="#navigation" class="font-medium text-slate-500 dark:text-slate-100 hover:text-emerald-500 relative">Navigation</a>
-            
-            <a href="#feedback" class="font-medium text-slate-500 dark:text-slate-100 hover:text-purple-500 relative">Feedback</a>
-            
+            <a href="#elements" class="font-medium text-slate-500 dark:text-slate-100 hover:text-sky-500 hover:dark:text-sky-500 relative">Elements</a>
+
+            <a href="#forms" class="font-medium text-slate-500 dark:text-slate-100 hover:text-rose-500 hover:dark:text-rose-500 relative">Forms</a>
+
+            <a href="#modals" class="font-medium text-slate-500 dark:text-slate-100 hover:text-yellow-500 hover:dark:text-yellow-500 relative">Modals</a>
+
+            <a href="#navigation" class="font-medium text-slate-500 dark:text-slate-100 hover:text-emerald-500 hover:dark:text-emerald-500 relative">Navigation</a>
+
+            <a href="#feedback" class="font-medium text-slate-500 dark:text-slate-100 hover:text-purple-500 hover:dark:text-purple-500 relative">Feedback</a>
+
         </nav>
 
 
-        <main class="w-screen lg:w-9/12 mx-auto px-10">
+        <main
+            class="w-screen lg:w-9/12 mx-auto px-10">
 
             <!-- Elements -->
             <span id="elements" class="mb-12 opacity-0 select-none block">.</span>
 
             <section class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 lg:grid-cols-3 relative mb-14 mt-5">
 
-                <span  class="absolute -top-7 left-0 lg:-left-24 before:block before:absolute before:-inset-1 before:mt-3 before:h-4 before:-skew-y-3 before:bg-sky-500/60 inline-block">
-                    <span class="relative text-black font-bold text-2xl">Elements</span>
+                <span class="absolute -top-7 left-0 lg:-left-24 before:block before:absolute before:-inset-1 before:mt-3 before:h-4 before:-skew-y-3 before:bg-sky-500/60 inline-block">
+                    <span class="relative text-slate-900 dark:text-slate-100 font-bold text-2xl">Elements</span>
                 </span>
 
                 <a href="/components/avatars/" class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
                         <span class="bg-sky-500 absolute left-5 top-5 uppercase pt-[1px] rounded-full text-white pr-1 pl-[0.35rem] text-xs font-bold">Novo</span>
                         <div class="sub-item h-32 item-sky">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-sky-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Avatars</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Avatars</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
                     </div>
-                </a> 
+                </a>
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-sky">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-sky-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Badges</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Badges</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
                     </div>
-                </a> 
+                </a>
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-sky">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-sky-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Buttons</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Buttons</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
                     </div>
-                </a> 
-                
-                <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
-                        <div class="sub-item h-32 item-sky">
-                            <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-sky-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-3xl">Buttons Groups</span>
-                            </span>
-                        </div>
-                        <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
-                    </div>
-                </a> 
+                </a>
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-sky">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-sky-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Dropdowns</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-3xl">Buttons Groups</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
                     </div>
-                </a> 
+                </a>
+
+                <a href="." class="no-sel">
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
+                        <div class="sub-item h-32 item-sky">
+                            <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-sky-500/75 relative inline-block">
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Dropdowns</span>
+                            </span>
+                        </div>
+                        <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
+                    </div>
+                </a>
 
 
             </section>
@@ -210,120 +203,119 @@
             <section class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 lg:grid-cols-3 relative mb-14 mt-5">
 
                 <span class="absolute -top-7 left-0 lg:-left-24 before:block before:absolute before:-inset-1 before:mt-3 before:h-4 before:-skew-y-3 before:bg-rose-500/60 inline-block">
-                    <span class="relative text-black font-bold text-2xl">Forms</span>
+                    <span class="relative text-slate-900 dark:text-slate-100 font-bold text-2xl">Forms</span>
                 </span>
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-rose">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-rose-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Form Layouts</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Form Layouts</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
                     </div>
-                </a> 
+                </a>
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-rose">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-rose-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Input Groups</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Input Groups</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
                     </div>
-                </a> 
+                </a>
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-rose">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-rose-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Select Menus</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Select Menus</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
                     </div>
-                </a> 
-                
-                <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
-                        <div class="sub-item h-32 item-rose">
-                            <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-rose-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Login/Register</span>
-                            </span>
-                        </div>
-                        <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
-                    </div>
-                </a> 
+                </a>
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-rose">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-rose-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Textareas</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Login/Register</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
                     </div>
-                </a>  
+                </a>
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-rose">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-rose-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Radio Groups</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Textareas</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
                     </div>
-                </a>  
+                </a>
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-rose">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-rose-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Checkboxes</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Radio Groups</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
                     </div>
-                </a>  
+                </a>
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-rose">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-rose-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Toggles</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Checkboxes</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
                     </div>
-                </a>  
+                </a>
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-rose">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-rose-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Action Panels</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Toggles</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
                     </div>
-                </a>  
+                </a>
+
+                <a href="." class="no-sel">
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
+                        <div class="sub-item h-32 item-rose">
+                            <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-rose-500/75 relative inline-block">
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Action Panels</span>
+                            </span>
+                        </div>
+                        <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
+                    </div>
+                </a>
 
 
             </section>
-
 
 
             <!-- Modals -->
@@ -331,60 +323,59 @@
 
             <section class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 lg:grid-cols-3 relative mb-14 mt-5">
 
-                <span  class="absolute -top-7 left-0 lg:-left-24 before:block before:absolute before:-inset-1 before:mt-3 before:h-4 before:-skew-y-3 before:bg-yellow-500/60 inline-block">
-                    <span class="relative text-black font-bold text-2xl">Modals</span>
+                <span class="absolute -top-7 left-0 lg:-left-24 before:block before:absolute before:-inset-1 before:mt-3 before:h-4 before:-skew-y-3 before:bg-yellow-500/60 inline-block">
+                    <span class="relative text-slate-900 dark:text-slate-100 font-bold text-2xl">Modals</span>
                 </span>
 
                 <a href="/components/avatars/index.html" class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
                         <div class="sub-item h-32 item-yellow">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-yellow-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-3xl">Centered Action</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-3xl">Centered Action</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">5 Components</p>
                     </div>
-                </a> 
+                </a>
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-yellow">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-yellow-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Wide Buttons</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Wide Buttons</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">5 Components</p>
                     </div>
-                </a> 
+                </a>
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-yellow">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-yellow-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Single Action</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Single Action</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">5 Components</p>
                     </div>
-                </a> 
-                
+                </a>
+
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-yellow">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-yellow-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-3xl">With Background</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-3xl">With Background</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">5 Components</p>
                     </div>
-                </a> 
+                </a>
 
 
             </section>
-
 
 
             <!-- Navigation -->
@@ -392,63 +383,15 @@
 
             <section class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 lg:grid-cols-3 relative mb-14 mt-5">
 
-                <span  class="absolute -top-7 left-0 lg:-left-24 before:block before:absolute before:-inset-1 before:mt-3 before:h-4 before:-skew-y-3 before:bg-emerald-500/60 inline-block">
-                    <span class="relative text-black font-bold text-2xl">Navigation</span>
+                <span class="absolute -top-7 left-0 lg:-left-24 before:block before:absolute before:-inset-1 before:mt-3 before:h-4 before:-skew-y-3 before:bg-emerald-500/60 inline-block">
+                    <span class="relative text-slate-900 dark:text-slate-100 font-bold text-2xl">Navigation</span>
                 </span>
 
                 <a href="/components/avatars/index.html" class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
                         <div class="sub-item h-32 item-emerald">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-emerald-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Navbars</span>
-                            </span>
-                        </div>
-                        <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
-                    </div>
-                </a> 
-
-                <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
-                        <div class="sub-item h-32 item-emerald">
-                            <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-emerald-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Pagination</span>
-                            </span>
-                        </div>
-                        <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
-                    </div>
-                </a> 
-
-                <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
-                        <div class="sub-item h-32 item-emerald">
-                            <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-emerald-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Tabs</span>
-                            </span>
-                        </div>
-                        <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
-                    </div>
-                </a> 
-
-                <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
-                        <div class="sub-item h-32 item-emerald">
-                            <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-emerald-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Sidebar</span>
-                            </span>
-                        </div>
-                        <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
-                    </div>
-                </a>
-                
-                <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
-                        <div class="sub-item h-32 item-emerald">
-                            <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-emerald-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Breadcrumbs</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Navbars</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
@@ -456,11 +399,59 @@
                 </a>
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-emerald">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-emerald-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Steps</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Pagination</span>
+                            </span>
+                        </div>
+                        <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
+                    </div>
+                </a>
+
+                <a href="." class="no-sel">
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
+                        <div class="sub-item h-32 item-emerald">
+                            <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-emerald-500/75 relative inline-block">
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Tabs</span>
+                            </span>
+                        </div>
+                        <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
+                    </div>
+                </a>
+
+                <a href="." class="no-sel">
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
+                        <div class="sub-item h-32 item-emerald">
+                            <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-emerald-500/75 relative inline-block">
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Sidebar</span>
+                            </span>
+                        </div>
+                        <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
+                    </div>
+                </a>
+
+                <a href="." class="no-sel">
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
+                        <div class="sub-item h-32 item-emerald">
+                            <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-emerald-500/75 relative inline-block">
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Breadcrumbs</span>
+                            </span>
+                        </div>
+                        <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
+                    </div>
+                </a>
+
+                <a href="." class="no-sel">
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
+                        <div class="sub-item h-32 item-emerald">
+                            <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-emerald-500/75 relative inline-block">
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Steps</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">10 Components</p>
@@ -476,57 +467,57 @@
 
             <section class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 lg:grid-cols-3 relative mb-14 mt-5">
 
-                <span  class="absolute -top-7 left-0 lg:-left-24 before:block before:absolute before:-inset-1 before:mt-3 before:h-4 before:-skew-y-3 before:bg-purple-500/60 inline-block">
-                    <span class="relative text-black font-bold text-2xl">Feedback</span>
+                <span class="absolute -top-7 left-0 lg:-left-24 before:block before:absolute before:-inset-1 before:mt-3 before:h-4 before:-skew-y-3 before:bg-purple-500/60 inline-block">
+                    <span class="relative text-slate-900 dark:text-slate-100 font-bold text-2xl">Feedback</span>
                 </span>
 
                 <a href="/components/avatars/index.html" class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
                         <div class="sub-item h-32 item-purple">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-purple-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Alerts</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Alerts</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">5 Components</p>
                     </div>
-                </a> 
+                </a>
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-purple">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-purple-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Empty States</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Empty States</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">5 Components</p>
                     </div>
-                </a> 
+                </a>
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-purple">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-purple-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Notification</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Notification</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">5 Components</p>
                     </div>
-                </a> 
+                </a>
 
 
                 <a href="." class="no-sel">
-                    <div class="grid-item group hover:bg-zinc-100/70 relative rounded-xl p-2">
-                        
+                    <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+
                         <div class="sub-item h-32 item-purple">
                             <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-purple-500/75 relative inline-block">
-                                <span class="relative text-black font-league font-bold text-4xl">Banners</span>
+                                <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Banners</span>
                             </span>
                         </div>
                         <p class="mt-1 text-xs font-semibold opacity-60">5 Components</p>
                     </div>
-                </a> 
+                </a>
 
 
             </section>
