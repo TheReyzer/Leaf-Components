@@ -1,7 +1,7 @@
 {
     "scripts": {
-        "dev": " live-server ./src/  & tailwind ./src/tailwind.css -o ./src/css/style.css --minify --watch",
-        "build": "tailwind ./src/tailwind.css -o ./src/css/style.css --minify"
+        "dev": " live-server ./src/  & tailwind -i ./src/tailwind.css -o ./src/css/style.css --watch",
+        "build": "tailwind build -i ./src/tailwind.css -o ./src/css/style.css --minify"
     },
     "devDependencies": {
         "live-server": "^1.2.2",

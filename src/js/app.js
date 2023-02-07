@@ -163,7 +163,6 @@ btnCopy.forEach((el, i) => {
 // Highlight Code
 function hightlight(i, state) {
     if (state == 0) {
-        const html = ['div', 'img', 'section','span'];
         const code = document.querySelectorAll('pre');
 
         // change html classes
@@ -183,11 +182,18 @@ function hightlight(i, state) {
         code[i].innerHTML = replaceWords(code[i].innerHTML, "&lt;", `<code class="text-slate-500 dark:">&lt;</code>`);
 
         // Change html tags
-        html.forEach(word => {
-            const regex = /<.*?(?= |>|\/>|<\/.*?>)/g;
-            const modifiedString = replaceWords(code[i].innerHTML, word, `<code class="text-rose-500    dark:text-rose-400">${word}</code>`);
-            code[i].innerHTML = modifiedString;
-        });
+         const html = ['div','img','section','span','button','path'];
+         html.forEach(word => {
+             //const regex = /<.*?(?= |>|\/>|<\/.*?>)/g;
+             const modifiedString = replaceWords(code[i].innerHTML, word, `<code class="text-rose-500 dark:text-rose-400">${word}</code>`);
+             code[i].innerHTML = modifiedString;
+         });
+        
+
+        
+
+        
+
     }
 }
 
