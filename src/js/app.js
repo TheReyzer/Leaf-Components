@@ -2,8 +2,7 @@
 var btnLight = document.querySelector('.btn-light');
 var btnDark = document.querySelector('.btn-dark');
 var btnTheme = document.querySelector('.btn-theme');
-// "build": "tailwindcss -i ./src/tailwind.css -o ./src/css/style.css --minify --watch",
-        // "dev": "tailwindcss -i ./src/tailwind.css -o ./src/style.css --watch & live-server ./src/"
+
 function checkTheme() {
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         // Dark
@@ -186,7 +185,7 @@ function hightlight(i, state) {
         // Change html tags
         html.forEach(word => {
             const regex = /<.*?(?= |>|\/>|<\/.*?>)/g;
-            const modifiedString = replaceWords(code[i].innerHTML, word, `<code class="text-rose-500 dark:text-rose-400">${word}</code>`);
+            const modifiedString = replaceWords(code[i].innerHTML, word, `<code class="text-rose-500    dark:text-rose-400">${word}</code>`);
             code[i].innerHTML = modifiedString;
         });
     }
