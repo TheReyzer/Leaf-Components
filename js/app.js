@@ -190,7 +190,7 @@ function hightlight(i, state) {
 
         html.forEach(word => {
             console.log(word)
-              const modifiedString = replaceWords(code[i].innerHTML, word, `<code class="text-rose-500 dark:text-rose-400">${word}</code>`);
+              const modifiedString = replaceTags(code[i].innerHTML, word, `<code class="text-rose-500 dark:text-rose-400">${word}</code>`);
               code[i].innerHTML = modifiedString;
         });
           
@@ -201,8 +201,11 @@ function replaceBetweenQuotes(str, wordToReplace, replaceWith) {
     return str.replace(new RegExp(`class="(.*?)${wordToReplace}(.*?)"`, 'g'), `class="$1${replaceWith}$2"`);
 }
 
-
 function replaceWords(str, wordToReplace, replaceWith) {
+    return str.replace(new RegExp(wordToReplace,'g'), replaceWith);
+}
+
+function replaceTags(str, wordToReplace, replaceWith) {
     const regex = new RegExp(wordToReplace, 'g');
     const newStr = str.replace(/('[^']*'|"[^"]*")|\b\w+\b/g, function(match, group1) {
       if (group1 === undefined) {
@@ -212,5 +215,5 @@ function replaceWords(str, wordToReplace, replaceWith) {
       }
     });
     return newStr;
-  }
+}
   
