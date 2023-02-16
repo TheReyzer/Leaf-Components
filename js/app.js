@@ -110,12 +110,22 @@ btnCode.forEach((el, i) => {
     var state = 0;
     el.addEventListener('click', () => {
 
-        hightlight(i, state)
+        hightlight(i, state);
         if (previewCode[i].classList.contains('hidden')) {
             previewCode[i].classList.replace('hidden', 'flex');
             previewBox[i].classList.add('hidden');
         }
         state++
+
+        if (el.classList.contains('bg-slate-500/10')) {
+            el.classList.replace('bg-slate-500/10', 'bg-slate-500');
+            el.classList.replace('text-slate-500', 'text-white');
+            el.classList.add('dark:text-slate-900');
+
+            btnPreview[i].classList.replace('bg-slate-500', 'bg-slate-500/10');
+            btnPreview[i].classList.replace('text-white', 'text-slate-500');
+            btnPreview[i].classList.remove('dark:text-slate-900');
+        }
     });
 });
 
@@ -124,6 +134,16 @@ btnPreview.forEach((el, i) => {
         if (! previewCode[i].classList.contains('hidden')) {
             previewCode[i].classList.replace('flex', 'hidden');
             previewBox[i].classList.remove('hidden');
+        }
+
+        if (el.classList.contains('bg-slate-500/10')) {
+            el.classList.replace('bg-slate-500/10', 'bg-slate-500');
+            el.classList.replace('text-slate-500', 'text-white');
+            el.classList.add('dark:text-slate-900');
+
+            btnCode[i].classList.replace('bg-slate-500', 'bg-slate-500/10');
+            btnCode[i].classList.replace('text-white', 'text-slate-500');
+            btnCode[i].classList.remove('dark:text-slate-900');
         }
     });
 });
