@@ -83,25 +83,29 @@ renderData:
                 
         <!-- Name -->
         {% from 'components/component_view.njk' import component_info %}
-        {{ component_info({ name: "Centered Icon", type: "elements" }) }}
+        {{ component_info({ name: "With Icon", type: "elements" }) }}
 
         <!-- Copy/View code and Code Preview and Preview -->
         {% include 'components/code_box.njk' %}
 
         <!-- Preview -->
         <div class="preview-box my-7 mb-12 flex flex-row space-x-5">
-            <span class="px-4 py-2.5 text-sm font-medium text-center text-white bg-sky-700 rounded-lg dark:bg-sky-600">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                    <path
-                        fill-rule="evenodd"
-                        d="M2.25 13.5a8.25 8.25 0 018.25-8.25.75.75 0 01.75.75v6.75H18a.75.75 0 01.75.75 8.25 8.25 0 01-16.5 0z"
-                        clip-rule="evenodd"/>
-                    <path
-                        fill-rule="evenodd"
-                        d="M12.75 3a.75.75 0 01.75-.75 8.25 8.25 0 018.25 8.25.75.75 0 01-.75.75h-7.5a.75.75 0 01-.75-.75V3z"
-                        clip-rule="evenodd"/>
-                </svg>
-            </span>
+            <div class="flex flex-row space-x-5 items-center">
+                <span class="inline-flex w-fit h-fit items-center bg-sky-100 text-sky-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-sky-900 dark:text-sky-300">
+                    <span class="w-1 h-1 rounded-full bg-sky-800 dark:bg-sky-300 block mr-1"></span>
+                    Notific
+                </span>
+
+                <span class="inline-flex w-fit h-fit  items-center bg-sky-100 text-sky-800 text-md font-medium px-2.5 py-0.5 rounded-full dark:bg-sky-900 dark:text-sky-300">
+                    <span class="w-1.5 h-1.5 rounded-full bg-sky-800 dark:bg-sky-300 block mr-1"></span>
+                    Notifications 
+                </span>
+
+                <span class="inline-flex w-fit h-fit  items-center bg-sky-100 text-sky-800 text-lg font-medium px-2.5 py-0.5 rounded-full dark:bg-sky-900 dark:text-sky-300">
+                    <span class="w-2 h-2 rounded-full bg-sky-800 dark:bg-sky-300 block mr-1"></span>
+                    Large
+                </span>
+            </div>
         </div>
     </section>
 
@@ -118,10 +122,21 @@ renderData:
 
         <!-- Preview -->
         <div class="preview-box my-7 mb-12 flex flex-row space-x-5">
-            <div class="flex flex-row items-center gap-x-5">
-                <img class="ring-2 ring-slate-200 dark:ring-slate-800 object-cover rounded-md w-7 h-7" src="/img/ic.png" alt=""/>
-                <img class="ring-2 ring-slate-200 dark:ring-slate-800 object-cover rounded-md w-10 h-10" src="/img/ic.png" alt=""/>
-                <img class="ring-2 ring-slate-200 dark:ring-slate-800 object-cover rounded-md w-16 h-16" src="/img/ic.png" alt=""/>
+            <div class="flex flex-row space-x-5 items-center">
+                <span class="inline-flex w-fit h-fit items-center bg-sky-100 text-sky-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-sky-900 dark:text-sky-300">
+                    <span class="w-1 h-1 rounded-full bg-sky-800 dark:bg-sky-300 block mr-1"></span>
+                    Small
+                </span>
+
+                <span class="inline-flex w-fit h-fit  items-center bg-sky-100 text-sky-800 text-md font-medium px-2.5 py-0.5 rounded-full dark:bg-sky-900 dark:text-sky-300">
+                    <span class="w-1.5 h-1.5 rounded-full bg-sky-800 dark:bg-sky-300 block mr-1"></span>
+                    Medium
+                </span>
+
+                <span class="inline-flex w-fit h-fit  items-center bg-sky-100 text-sky-800 text-lg font-medium px-2.5 py-0.5 rounded-full dark:bg-sky-900 dark:text-sky-300">
+                    <span class="w-2 h-2 rounded-full bg-sky-800 dark:bg-sky-300 block mr-1"></span>
+                    Large
+                </span>
             </div>
         </div>
     </section>
