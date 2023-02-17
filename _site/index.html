@@ -16,13 +16,13 @@
         </script>
 
     </head>
-    <body class="font-inter bg-white text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+    <body class="font-inter bg-white text-slate-900 dark:bg-slate-900 dark:text-slate-100 transition-colors">
         
-        <header>
-            <nav class="no-sel flex flex-row justify-center items-center p-7 font-semibold gap-x-10 text-slate-500">
+        <header class="sticky top-0 backdrop-opacity-60 backdrop-blur-lg bg-white/90 dark:bg-slate-900/90 z-30 transition-colors">
+            <nav class="no-sel flex flex-row justify-center items-center px-7 pt-4 pb-2 font-semibold gap-x-10 text-slate-500">
                 <a href="/" class="hover:text-sky-500  transitions-all ease-in-out duration-300">Home</a>
                 <a href="https://rodrigocjesus.netlify.app" target="_blank" class="hover:text-sky-500  transitions-all ease-in-out duration-300">Portifolio</a>
-                <div class="flex flex-row items-center gap-x-5 pl-7  border-l border-slate-300 dark:border-slate-700">
+                <div class="flex flex-row items-center gap-x-5 pl-7  border-l border-slate-300 dark:border-slate-700 transition-colors">
                     <a href="https://github.com/TheReyzer" target="_blank" class="p-2 transitions-all ease-in-out duration-300 hover:text-sky-500">
                         <svg viewBox="0 0 16 16" class="w-5 h-5" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
                     </a>
@@ -49,58 +49,60 @@
 
 
 <!-- Info -->
-<section class="mt-24 mb-20 px-10 grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-screen lg:w-11/12 mx-auto">
+<section class="mt-24 mb-20 px-7 flex flex-col justify-center lg:flex-row lg:px-10 gap-8 w-screen md:w-9/12 lg:w-11/12 mx-auto">
+    <!-- 1 -->
     <div class="flex flex-row">
-        <div>
+        <span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-10 h-10 text-sky-500 drop-shadow-md" viewbox="0 0 16 16">
                 <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
                 <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
                 <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
             </svg>
-        </div>
+        </span>
         <div class="ml-6">
-            <h2 class="font-bold mb-2 text-lg">Ready to use</h2>
-            <p class="font-light">Click on Components, interact with all of them, copy and use. That simple.</p>
+            <h2 class="font-bold mb-2 text-xl">Copy and use</h2>
+            <p class="font-light opacity-60">Click on Components, interact with all of them, copy and use. That simple.</p>
         </div>
     </div>
 
+    <!-- 2 -->
     <div class="flex flex-row">
-        <div>
+        <span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-10 h-10 text-sky-500 drop-shadow-md" viewbox="0 0 16 16">
                 <path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"/>
             </svg>
-        </div>
+        </span>
         <div class="ml-6">
-            <h2 class="font-bold mb-2 text-lg">Fully Responsive</h2>
-            <p class="font-light">All Components designed and created to look great on any screen size.</p>
+            <h2 class="font-bold mb-2 text-xl">Fully Responsive</h2>
+            <p class="font-light opacity-60">All Components designed and created to look great on any screen size.</p>
         </div>
     </div>
 
-    <div class="mx-auto flex flex-row">
-        <div>
+    <!-- 3 -->
+    <div class="flex flex-row">
+        <span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-10 h-10 text-sky-500 drop-shadow-md" viewbox="0 0 16 16">
                 <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/>
             </svg>
-        </div>
+        </span>
         <div class="ml-6">
-            <h2 class="font-bold mb-2 text-lg">New Components</h2>
-            <p class="font-light">Always increasing the size of the collection with new Components and the same quality.</p>
+            <h2 class="font-bold mb-2 text-xl">New Components</h2>
+            <p class="font-light opacity-60">Always increasing the size of the collection with new Components and the same quality.</p>
         </div>
     </div>
 </section>
 
 
-<nav class="sticky top-0 backdrop-opacity-60 backdrop-blur-lg bg-white/90 dark:bg-slate-900/90 z-20 px-8 pt-2 pb-1 no-sel mb-12 md:justify-center lg:justify-center flex flex-row gap-x-10 hide-scroll border-b border-gray-200 dark:border-gray-800 overflow-x-scroll overflow-y-hidden">
-    <a href="#elements" class="transitions-all ease-in-out duration-300 font-medium text-slate-500 dark:text-slate-100 hover:text-sky-500 hover:dark:text-sky-500 relative">Elements</a>
+<nav class="transition-colors sticky top-[63.7px] backdrop-opacity-60 backdrop-blur-lg bg-white/90 dark:bg-slate-900/90 z-20 px-8 pt-0 pb-1.5 no-sel mb-12 md:justify-center lg:justify-center flex flex-row gap-x-10 hide-scroll border-b border-gray-200 dark:border-gray-800 overflow-x-scroll overflow-y-hidden">
+    <a href="#elements" class="transitions-all ease-in-out duration-300 font-medium text-slate-500 hover:text-sky-500 hover:dark:text-sky-500 relative">Elements</a>
 
-    <a href="#forms" class="transitions-all ease-in-out duration-300 font-medium text-slate-500 dark:text-slate-100 hover:text-rose-500 hover:dark:text-rose-500 relative">Forms</a>
+    <a href="#forms" class="transitions-all ease-in-out duration-300 font-medium text-slate-500 hover:text-rose-500 hover:dark:text-rose-500 relative">Forms</a>
 
-    <a href="#modals" class="transitions-all ease-in-out duration-300 font-medium text-slate-500 dark:text-slate-100 hover:text-yellow-500 hover:dark:text-yellow-500 relative">Modals</a>
+    <a href="#modals" class="transitions-all ease-in-out duration-300 font-medium text-slate-500 hover:text-yellow-500 hover:dark:text-yellow-500 relative">Modals</a>
 
-    <a href="#navigation" class="transitions-all ease-in-out duration-300 font-medium text-slate-500 dark:text-slate-100 hover:text-emerald-500 hover:dark:text-emerald-500 relative">Navigation</a>
+    <a href="#navigation" class="transitions-all ease-in-out duration-300 font-medium text-slate-500 hover:text-emerald-500 hover:dark:text-emerald-500 relative">Navigation</a>
 
-    <a href="#feedback" class="transitions-all ease-in-out duration-300 font-medium text-slate-500 dark:text-slate-100 hover:text-purple-500 hover:dark:text-purple-500 relative">Feedback</a>
-
+    <a href="#feedback" class="transitions-all ease-in-out duration-300 font-medium text-slate-500 hover:text-purple-500 hover:dark:text-purple-500 relative">Feedback</a>
 </nav>
 
 <main
@@ -109,27 +111,27 @@
     <section id="elements" class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 lg:grid-cols-3 relative mb-14 mt-5">
         <span class="absolute -top-7 left-0 lg:-left-24 before:block before:absolute before:-inset-1 before:mt-3 before:h-4
                 before:-skew-y-3 before:bg-sky-500/60 inline-block">
-            <span class="relative text-slate-900 dark:text-slate-100 font-bold text-2xl">Elements</span>
+            <span class="relative text-slate-900 dark:text-slate-100 font-bold text-2xl transitions-colors">Elements</span>
         </span>
         <a href="/components/avatars/" class="no-sel">
-            <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+            <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 transition-colors relative rounded-xl p-2">
                 <span class="bg-sky-500 absolute left-2 top-2 uppercase pt-[1px] rounded-t-full rounded-br-full text-white pr-1 pl-[0.35rem] text-xs font-bold">
                 Novo</span>
                 <div class="sub-item h-32 item-sky">
                     <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-sky-500/75 relative
                             inline-block">
-                        <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Avatars</span>
+                        <span class="relative text-slate-900 dark:text-slate-100 transition-colors font-league font-bold text-4xl">Avatars</span>
                     </span>
                 </div>
                 <p class="mt-1 text-xs font-semibold opacity-60">5 Components</p>
             </div>
         </a>
         <a href="/components/badges/" class="no-sel">
-            <div class=" grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
+            <div class=" grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 transition-colors relative rounded-xl p-2">
                 <div class="sub-item h-32 item-sky">
                     <span class="before:block before:absolute before:-inset-1 before:mt-3 before:h-5 before:-skew-y-3 before:bg-sky-500/75 relative
                             inline-block">
-                        <span class="relative text-slate-900 dark:text-slate-100 font-league font-bold text-4xl">Badges</span>
+                        <span class="relative text-slate-900 dark:text-slate-100 transition-colors font-league font-bold text-4xl">Badges</span>
                     </span>
                 </div>
                 <p class="mt-1 text-xs font-semibold opacity-60">5 Components</p>
@@ -173,7 +175,7 @@
     <section id="forms" class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 lg:grid-cols-3 relative mb-14 mt-5">
         <span class="absolute -top-7 left-0 lg:-left-24 before:block before:absolute before:-inset-1 before:mt-3 before:h-4
                 before:-skew-y-3 before:bg-rose-500/60 inline-block">
-            <span class="relative text-slate-900 dark:text-slate-100 font-bold text-2xl">Forms</span>
+            <span class="relative text-slate-900 dark:text-slate-100 font-bold text-2xl transitions-colors">Forms</span>
         </span>
         <a href="." class="no-sel">
             <div class="grid-item group hover:bg-slate-100/70 hover:dark:bg-slate-800/20 relative rounded-xl p-2">
@@ -470,7 +472,7 @@
             </svg>
         </button>
 
-        <footer class="no-sel flex flex-col w-full p-7 text-slate-500">
+        <footer class="no-sel flex flex-col w-full px-7 pb-7 text-slate-500">
     <div class="flex flex-col justify-start w-fit mx-auto">
         <span class="mb-2 font-light text-sm">Made using</span>
         <div class="flex flex-row gap-x-5 mx-auto">

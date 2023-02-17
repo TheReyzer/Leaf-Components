@@ -650,12 +650,12 @@ pre::-webkit-scrollbar-thumb{
   left: 0px;
 }
 
-.left-5{
-  left: 1.25rem;
+.left-2{
+  left: 0.5rem;
 }
 
-.top-5{
-  top: 1.25rem;
+.top-2{
+  top: 0.5rem;
 }
 
 .bottom-5{
@@ -706,24 +706,52 @@ pre::-webkit-scrollbar-thumb{
   bottom: 0px;
 }
 
-.left-1{
-  left: 0.25rem;
+.top-10{
+  top: 2.5rem;
 }
 
-.left-2{
-  left: 0.5rem;
+.top-20{
+  top: 5rem;
 }
 
-.top-2{
-  top: 0.5rem;
+.top-16{
+  top: 4rem;
 }
 
-.left-2\.5{
-  left: 0.625rem;
+.top-auto{
+  top: auto;
 }
 
-.top-2\.5{
-  top: 0.625rem;
+.top-\[80px\]{
+  top: 80px;
+}
+
+.top-\[80\.5px\]{
+  top: 80.5px;
+}
+
+.top-\[79\.3px\]{
+  top: 79.3px;
+}
+
+.top-\[79\.6px\]{
+  top: 79.6px;
+}
+
+.top-\[79\.7px\]{
+  top: 79.7px;
+}
+
+.top-\[5\.7px\]{
+  top: 5.7px;
+}
+
+.top-\[55\.7px\]{
+  top: 55.7px;
+}
+
+.top-\[63\.7px\]{
+  top: 63.7px;
 }
 
 .z-20{
@@ -732,6 +760,10 @@ pre::-webkit-scrollbar-thumb{
 
 .z-\[999\]{
   z-index: 999;
+}
+
+.z-30{
+  z-index: 30;
 }
 
 .m-auto{
@@ -977,10 +1009,6 @@ pre::-webkit-scrollbar-thumb{
   justify-content: center;
 }
 
-.justify-items-center{
-  justify-items: center;
-}
-
 .gap-8{
   gap: 2rem;
 }
@@ -1002,11 +1030,6 @@ pre::-webkit-scrollbar-thumb{
 .gap-x-2{
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
-}
-
-.gap-x-4{
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
 }
 
 .gap-x-3{
@@ -1062,21 +1085,6 @@ pre::-webkit-scrollbar-thumb{
   border-radius: 0.5rem;
 }
 
-.rounded-t{
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-}
-
-.rounded-t-xl{
-  border-top-left-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
-}
-
-.rounded-t-3xl{
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
-}
-
 .rounded-t-full{
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
@@ -1090,14 +1098,6 @@ pre::-webkit-scrollbar-thumb{
 .rounded-r-lg{
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-}
-
-.rounded-br-xl{
-  border-bottom-right-radius: 0.75rem;
-}
-
-.rounded-br-3xl{
-  border-bottom-right-radius: 1.5rem;
 }
 
 .rounded-br-full{
@@ -1143,11 +1143,6 @@ pre::-webkit-scrollbar-thumb{
   border-color: rgb(226 232 240 / var(--tw-border-opacity));
 }
 
-.border-slate-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(100 116 139 / var(--tw-border-opacity));
-}
-
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1165,6 +1160,15 @@ pre::-webkit-scrollbar-thumb{
 .bg-sky-600{
   --tw-bg-opacity: 1;
   background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500\/10{
+  background-color: rgb(100 116 139 / 0.1);
+}
+
+.bg-slate-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .bg-slate-100\/50{
@@ -1211,29 +1215,6 @@ pre::-webkit-scrollbar-thumb{
   background-color: rgb(186 230 253 / var(--tw-bg-opacity));
 }
 
-.bg-slate-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-}
-
-.bg-slate-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-}
-
-.bg-slate-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
-.bg-slate-500\/20{
-  background-color: rgb(100 116 139 / 0.2);
-}
-
-.bg-slate-500\/10{
-  background-color: rgb(100 116 139 / 0.1);
-}
-
 .fill-transparent{
   fill: transparent;
 }
@@ -1263,9 +1244,18 @@ pre::-webkit-scrollbar-thumb{
   padding: 1rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .px-8{
@@ -1276,6 +1266,26 @@ pre::-webkit-scrollbar-thumb{
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-1\.5{
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
+
+.py-1\.5{
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .px-2\.5{
@@ -1313,11 +1323,6 @@ pre::-webkit-scrollbar-thumb{
   padding-bottom: 0.5rem;
 }
 
-.px-1{
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .px-0\.5{
   padding-left: 0.125rem;
   padding-right: 0.125rem;
@@ -1328,23 +1333,26 @@ pre::-webkit-scrollbar-thumb{
   padding-right: 0px;
 }
 
-.py-1\.5{
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.px-1\.5{
-  padding-left: 0.375rem;
-  padding-right: 0.375rem;
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pl-7{
   padding-left: 1.75rem;
+}
+
+.pt-2\.5{
+  padding-top: 0.625rem;
+}
+
+.pb-1\.5{
+  padding-bottom: 0.375rem;
 }
 
 .pt-2{
@@ -1367,12 +1375,32 @@ pre::-webkit-scrollbar-thumb{
   padding-left: 0.35rem;
 }
 
+.pb-7{
+  padding-bottom: 1.75rem;
+}
+
 .pl-5{
   padding-left: 1.25rem;
 }
 
 .pr-4{
   padding-right: 1rem;
+}
+
+.pt-7{
+  padding-top: 1.75rem;
+}
+
+.pt-0{
+  padding-top: 0px;
+}
+
+.pt-4{
+  padding-top: 1rem;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 
 .text-center{
@@ -1392,8 +1420,8 @@ pre::-webkit-scrollbar-thumb{
   line-height: 1;
 }
 
-.text-lg{
-  font-size: 1.125rem;
+.text-xl{
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -1420,11 +1448,6 @@ pre::-webkit-scrollbar-thumb{
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .font-semibold{
@@ -1507,12 +1530,6 @@ pre::-webkit-scrollbar-thumb{
 .shadow-md{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow{
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1787,6 +1804,11 @@ pre::-webkit-scrollbar-thumb{
   color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-slate-900{
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
 .dark .dark\:text-sky-400{
   --tw-text-opacity: 1;
   color: rgb(56 189 248 / var(--tw-text-opacity));
@@ -1820,11 +1842,6 @@ pre::-webkit-scrollbar-thumb{
 .dark .dark\:text-yellow-300{
   --tw-text-opacity: 1;
   color: rgb(253 224 71 / var(--tw-text-opacity));
-}
-
-.dark .dark\:text-slate-900{
-  --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 .dark .dark\:ring-slate-800{
@@ -1877,6 +1894,10 @@ pre::-webkit-scrollbar-thumb{
 }
 
 @media (min-width: 768px){
+  .md\:w-9\/12{
+    width: 75%;
+  }
+
   .md\:w-11\/12{
     width: 91.666667%;
   }
@@ -1910,6 +1931,10 @@ pre::-webkit-scrollbar-thumb{
 
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row{
+    flex-direction: row;
   }
 
   .lg\:justify-center{
