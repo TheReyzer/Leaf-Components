@@ -6,9 +6,7 @@
 
 
 @layer base {
-    html {
-        scroll-padding-top: 5rem;
-    }
+    html {scroll-padding-top: 10rem;}
     
     .no-sel {
         -webkit-tap-highlight-color: transparent;
